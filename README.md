@@ -2,43 +2,62 @@
 
 A classic Minesweeper game built with C# and Windows Forms.
 
-## Features
+Please use **.NET SDK 8.0 or above** (check with `dotnet --version`).
 
-- Classic Minesweeper gameplay
-- Randomly placed mines on every new game
-- Left click to reveal a cell, right click to place a flag
-- Automatic reveal of empty neighboring cells
+## 1. Git and GitHub
 
-## Requirements
+- Install Git: https://git-scm.com/
+- In VS Code, sign in to GitHub.
+- Open the Source Control tab (branch icon).
+- Click **Clone Repository**, choose `Clone from GitHub`, then choose `Minesweeper`, then pick a folder to save the project.
+- Remember that folder, it is your project working place.
+- Next time you code, open the `Minesweeper` folder in VS Code.
+- Git quick guide: https://github.com/git-guides
 
-- Windows 10 or later
-- [.NET SDK](https://dotnet.microsoft.com/download) (check your version with `dotnet --version`)
+### Git Configuration
 
-## Getting Started
+Before you use Git, enter these commands in the terminal (replace with your GitHub username and email):
 
-Clone the repository and run the game:
+```
+git config --global user.name "Your Name"
+```
 
-```bash
-git clone https://github.com/HTrNhatAhh/Minesweeper.git
-cd Minesweeper
+```
+git config --global user.email "your.email@example.com"
+```
+
+### Commit and Push in VS Code (GUI)
+
+1. After editing files, open Source Control.
+2. Click "+" next to each file you want to save.
+3. Enter a commit message (what you just coded or did).
+4. Click the dropdown "v" near Commit, then choose **Commit & Push**.
+5. To get the latest changes from teammates, click the three dots "..." near the repository title in Source Control, then choose **Pull**.
+
+## 2. Run the Game
+
+Using the terminal:
+
+```
 dotnet run --project src
 ```
 
-You can also open `Minesweeper.slnx` in Visual Studio and press **F5** to run.
+Or open `Minesweeper.slnx` in Visual Studio and press **F5**.
 
-## Project Structure
+## 3. Project Structure
 
 ```
 Minesweeper/
-├── src/                 # Game source code
-│   ├── Program.cs       # Application entry point
-│   ├── Form1.cs         # Main game window
+├── src/                  # Game source code
+│   ├── Program.cs        # Application entry point
+│   ├── Form1.cs          # Main game window
 │   └── ...
-├── Minesweeper.sln      # Visual Studio solution file
+├── .gitignore
+├── Minesweeper.slnx      # Solution file
 └── README.md
 ```
 
-## How to Play
+## 4. How to Play
 
 | Action | Control |
 |---|---|
@@ -49,14 +68,6 @@ Minesweeper/
 - Reveal every cell that does not contain a mine to win.
 - Revealing a mine ends the game.
 
-## Contributing
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add your feature"`
-4. Push to your branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
-## Author
+## 5. Author
 
 [HTrNhatAhh](https://github.com/HTrNhatAhh)
