@@ -3,8 +3,8 @@ using System.Windows.Forms;
 
 public class MinesBoardUI : UserControl
 {
-    private const int CELL_SIZE = 28;
-    private MinesBoard _board = new MinesBoard(9, 9, 10);
+    private const int CELL_SIZE = 36;
+    private MinesBoard _board = new MinesBoard(10, 10, 10);
     private readonly Color[] _foreColors =
     {
         Color.Blue, Color.Green, Color.Red, Color.Purple,
@@ -22,7 +22,7 @@ public class MinesBoardUI : UserControl
     public MinesBoardUI()
     {
         DoubleBuffered = true;
-        NewGame(9, 9, 10);
+        NewGame(10, 10, 10);
     }
 
     public void NewGame(int rows, int cols, int mines)

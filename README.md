@@ -2,7 +2,7 @@
 
 A classic Minesweeper game built with C# and Windows Forms.
 
-Please use **.NET SDK 8.0 or above** (check with `dotnet --version`).
+Please use **.NET SDK 10.0 or above** (check with `dotnet --version`).
 
 ## 1. Git and GitHub
 
