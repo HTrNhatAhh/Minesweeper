@@ -46,7 +46,6 @@ public partial class Form1 : Form
 
     private void StartNewGame()
     {
-
         _board.NewGame(ROWS, COLS, MINES);
         UpdateStatus();
     }
