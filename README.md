@@ -68,6 +68,3 @@ Minesweeper/
 - Reveal every cell that does not contain a mine to win.
 - Revealing a mine ends the game.
 
-## 5. Author
-
-[HTrNhatAhh](https://github.com/HTrNhatAhh)
